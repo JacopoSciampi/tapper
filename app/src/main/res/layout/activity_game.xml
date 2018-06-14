@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamebg"
+    tools:context=".GameActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topgamebar" />
+
+    <TextView
+        android:id="@+id/topMoneyText"
+        android:layout_width="49dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/arnoia"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#fffcc4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/addMoneyButton"
+        app:layout_constraintEnd_toStartOf="@+id/addMoneyButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addMoneyButton" />
+
+    <ImageView
+        android:id="@+id/addMoneyButton"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="201dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/openInvenctoryButton"
+        app:layout_constraintStart_toEndOf="@+id/topMoneyText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blank" />
+
+    <ImageView
+        android:id="@+id/openInvenctoryButton"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/openSettingsButton"
+        app:layout_constraintStart_toEndOf="@+id/addMoneyButton"
+        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:srcCompat="@drawable/blank" />
+
+    <ImageView
+        android:id="@+id/openSettingsButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintBottom_toBottomOf="@+id/openInvenctoryButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/openInvenctoryButton"
+        app:layout_constraintTop_toTopOf="@+id/openInvenctoryButton"
+        app:srcCompat="@drawable/blank" />
+</android.support.constraint.ConstraintLayout>
